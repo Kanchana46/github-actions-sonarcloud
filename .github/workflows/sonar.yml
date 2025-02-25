@@ -25,7 +25,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build
-      - run: mvn clean install -DskipTests
+        run: mvn clean install -DskipTests
 
       - name: Analyze with SonarCloud
         uses: SonarSource/sonarcloud-github-action@master
